@@ -252,7 +252,7 @@ extension MfArray{
             - mfarray: mfarray
             - axis: (Optional) axis, if not given, get summation for all elements
     */
-    public func orderedUnique(axis: Int? = nil) -> MfArray{
-        return Matft.orderedUnique(self, axis: axis)
-    }
+//    public func orderedUnique(axis: Int? = nil) -> MfArray{
+//        return Matft.orderedUnique(self, axis: axis)
+//    }
 }

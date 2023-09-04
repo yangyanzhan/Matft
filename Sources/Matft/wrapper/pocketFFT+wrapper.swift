@@ -4,7 +4,6 @@
 //
 //  Created by AM19A0 on 2023/02/10.
 //
-import pocketFFT
 import Accelerate
 
 internal typealias rfft_func = (rfft_plan, UnsafeMutablePointer<Double>, Double) -> Int32
