@@ -123,7 +123,7 @@ internal func bool_broadcast_to(_ mfarray: MfArray, shape: [Int]) -> MfArray{
         rowc_mfarray.withUnsafeMutableStartPointer(datatype: Float.self){
             srcptr in
             for i in 0..<origSize{
-                dstptrF.assign(repeating: (srcptr + i).pointee, count: offset)
+                dstptrF.update(repeating: (srcptr + i).pointee, count: offset)
                 dstptrF += offset
             }
         }

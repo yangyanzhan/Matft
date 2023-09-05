@@ -74,7 +74,7 @@ extension Matft{
             newdata.withUnsafeMutableStartPointer(datatype: U.self){
                 ptrU in
                 arr.withUnsafeMutableBufferPointer{
-                    ptrU.moveAssign(from: $0.baseAddress!, count: size)
+                    ptrU.moveUpdate(from: $0.baseAddress!, count: size)
                 }
             }
         }
@@ -182,7 +182,7 @@ extension Matft{
             newdata.withUnsafeMutableStartPointer(datatype: T.self){
                 ptrT in
                 d.withUnsafeMutableBufferPointer{
-                    ptrT.moveAssign(from: $0.baseAddress!, count: size)
+                    ptrT.moveUpdate(from: $0.baseAddress!, count: size)
                 }
             }
         }

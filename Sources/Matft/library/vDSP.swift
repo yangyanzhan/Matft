@@ -970,7 +970,7 @@ internal func argsort_by_vDSP<T: MfStorable>(_ mfarray: MfArray, _ axis: Int, _ 
                 //convert dataptr(int) to float
                 var flarray = uiarray.map{ Float($0) }
                 flarray.withUnsafeMutableBufferPointer{
-                    (dstptrF + offset).moveAssign(from: $0.baseAddress!, count: count)
+                    (dstptrF + offset).moveUpdate(from: $0.baseAddress!, count: count)
                 }
                 
                 offset += count

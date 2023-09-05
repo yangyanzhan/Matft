@@ -92,10 +92,10 @@ NOINLINE static void calc_first_quadrant(size_t n, double * restrict res)
 
 NOINLINE static void calc_first_half(size_t n, double * restrict res)
   {
-  int ndone=(n+1)>>1;
+  int ndone=((int)n+1)>>1;
   double * p = res+n-1;
   calc_first_octant(n<<2, p);
-  int i4=0, in=n, i=0;
+  int i4=0, in=(int)n, i=0;
   for (; i4<=in-i4; ++i, i4+=4) // octant 0
     {
     res[2*i] = p[2*i4]; res[2*i+1] = p[2*i4+1];
