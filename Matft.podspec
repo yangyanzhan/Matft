@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   spec.homepage       = "https://github.com/jjjkkkjjj/Matft"
   spec.license        = { :type => 'BSD-3-Clause', :file => 'LICENSE' }
   spec.author         = "jjjkkkjjj"
-  spec.platform       = :ios, "15.0"
+  spec.platform       = :ios, "14.0"
   spec.swift_versions = "5"
   spec.pod_target_xcconfig  = { 'SWIFT_VERSION' => '5' }
   spec.source         = { :git => "https://github.com/jjjkkkjjj/Matft.git", :tag => "#{spec.version}" }
